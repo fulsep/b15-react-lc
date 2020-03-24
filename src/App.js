@@ -17,8 +17,8 @@ class App extends Component{
         <div className='content'>
           <Switch>
             <Route path='/' exact render={()=><Home/>} />
-            <Route path='/about' exact render={()=><About/>} />
-            <Route path='/user' exact render={()=><Users/>} />
+            <Route path='/about' exact render={(props)=><About {...props}/>} />
+            <Route path='/user' exact render={(props)=><Users {...props}/>} />
             <Route path='/user/edit/:id' exact render={(props)=><UsersEdit {...props}/>} />
             <Route path='/contact' exact render={()=><ContactUs/>} />
           </Switch>
