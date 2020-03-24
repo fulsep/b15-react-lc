@@ -1,0 +1,14 @@
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+  background-color: black;
+  color: #fff;
+  height: 200px;
+}
+.banner .inner{
+  margin-right: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
